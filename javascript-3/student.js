@@ -6,7 +6,7 @@
 
 // Code Here
 
-let groceries = ['E', 'chorizo', 'potatoes'];
+let groceries = ['eggs', 'chorizo', 'potatoes'];
 
 //////////////////STEP 2////////////////////
 //Create a variable called 'yourName' that is equal to your name as a string
@@ -30,8 +30,8 @@ function setGroceryListTitle(x){
 // Code Here
 
 function addItem(item){
-    item.push(groceries)
-    displayData
+    groceries.push(item)
+    displayData()
 }
 
 //////////////////STEP 5////////////////////
@@ -40,8 +40,8 @@ function addItem(item){
 // Code Here
 
 function removeItem(index){
-    index.splice(groceries)
-    displayData
+    groceries.splice(index, 1)
+    displayData()
 }
 
 //////////////////STEP 6////////////////////
@@ -50,15 +50,12 @@ function removeItem(index){
 // Code Here
 
 function checkGroceryCount(){
-    for (i=0; i < groceries.length; i++){
-        if (groceries[i] >= 5){
-            return 'That looks like a big trip'
-        } else if (groceries[i] = 1){
-            return '1 item'
-        } else {
-            return items + 'items'
-        }
+    if (groceries.length >= 5){
+        return 'That looks like a big trip'
+    } else if (groceries.length > 1 && groceries.length < 5){
+        return groceries.length + 'items'
     }
+    return '1 item'
 }
 
 //////////////////STEP 6////////////////////
