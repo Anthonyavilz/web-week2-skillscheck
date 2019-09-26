@@ -34,9 +34,9 @@ let phrase = '';
 
 // Code Here
 if (lovesCode === true){
-    phrase + 'I love code';
+    phrase = 'I love code';
 } else {
-    phrase + 'I do not like code';
+    phrase = 'I do not like code';
 }
 
 //////////////////Wrap Up////////////////////
